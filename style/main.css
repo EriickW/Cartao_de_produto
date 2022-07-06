@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+:root{
+    font-size:62.5%;
+    --bg: hsl(30, 38%, 92%);
+    --destaque: hsl(158, 36%, 37%);
+   --destaqueHover: hsl(212, 21%, 14%);
+   --paragraph: hsl(228, 12%, 48%);
+   --White: hsl(0, 0%, 100%);
+}
+body{
+    background: var(--bg);
+    width: 100%;
+    height: 100vh;
+}
+main{
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-inline: auto;
+}
+.alinhamento{
+    width: 100%;
+    max-width: 140rem;
+    margin-inline:auto;
+    padding: 0 2%;
+}
+.container{
+    height: 100%;
+    max-height: 374px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-inline: auto;
+    flex-wrap: wrap;
+  
+}
+.img{
+    width: 250px;
+    height: 100%;
+
+}
+.img img{
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+    border-radius:8px 0px 0px 8px;
+}
+.content-product{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width: 250px;
+    height: 100%;
+    padding:5%;
+    background: var(--White);
+    border-radius: 0px 8px 8px 0px;
+}
+.content-product p{
+    font-size: 1.2rem;
+    color: var(--paragraph);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.9rem;
+    margin-bottom: 2.5rem;
+}
+.content-product .perfume{
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.content-product h1{
+    font-size: 2.8rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+.price{
+    display: flex;
+    gap: 2rem;
+
+    
+}
+.price s{
+    font-size: 1.2rem;
+    color: var(--paragraph);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.9rem;
+}
+.content-product .price p:nth-child(1){
+    color:var(--destaque);
+    font-size: 3rem;
+    font-family: 'Fraunces', serif;
+
+}
+
+button{
+    width: 100%;
+    background: var(--destaque);
+    height: 4rem;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition:all 0.3s ease-in-out;
+}
+button:hover{
+    background: var(--destaqueHover);
+}
+ a{
+ text-decoration: none;
+}
+@media (max-width: 520px) {
+    .img{
+        width: 250px;
+        height: 200px;
+    }
+    .img img{
+         border-radius:8px 8px 0px 0px;
+    }
+
+    .content-product{
+        border-radius: 0px 0px 8px 8px;
+    }
+}
